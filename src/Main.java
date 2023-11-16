@@ -8,8 +8,18 @@ public class Main {
      * zip(myArray1, myArray2) → {1,3,5,7,9,2,4,6,8,10,12,14,16}
      */
     public static int[] combine(int[] array1, int[] array2) {
+        int len1 = array1.length;
+        int len2 = array2.length;
+        int [] output = new int[len1+len2];
+        for (int i =0; i<len1; i++){
+            output [i] = array1[i];
+        }
+        for (int i =0; i<len2; i++){
+            output [i] = array2[i];
+        }
+        return output;
 
-        return null;
+
 
     }
 
@@ -21,8 +31,14 @@ public class Main {
      * zip(myArray1, myArray2) → {1,2,3,4,5,6,7,8,9,10}
      */
     public static int[] zip(int[] array1, int[] array2) {
-
-        return null;
+        int len1 = array1.length;
+        int len2 = array2.length;
+        int [] output = new int[len1+len2];
+        for(int i =0; i<len1+len2-1; i++){
+            output [i] = array1[i];
+            output [i+1] = array2[i];
+        }
+        return output;
 
     }
 
@@ -34,8 +50,14 @@ public class Main {
      * product(myArray1, myArray2) → {2,12,30,56,90}
      */
     public static int[] product(int[] array1, int[] array2) {
-
-        return null;
+        int len1 = array1.length;
+        int len2 = array2.length;
+        int [] output = new int[len1+len2];
+        for(int i =0; i<len1+len2; i++){
+            int add = array1[i] * array2[i];
+            output[i] = add;
+        }
+        return output;
 
     }
 
@@ -56,14 +78,28 @@ public class Main {
      * capitalCount(words) → {1, 2, 2, 0}
      */
     public static int[] capitalCount(String[] words) {
+        int len = words.length;
+        int [] output = new int[len];
+        for (int i =0; i<len; i++){
+            for (int a =0; i<len; i++){
+                if(countCapitalLetters(charAt(a)==true))
+            }
+        }
 
-        return null;
+
 
     }
 
     public static int countCapitalLetters(String word) {
+        int len = word.length();
+        for (int i =0; i<len; i++){
+            if(word.charAt(i).isUpperCase){
+            }
+        }
 
-        return 0;
+
+
+
 
     }
 
